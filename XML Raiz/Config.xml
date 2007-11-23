@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:Locale="es-MX">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="Config">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Host" type="xs:string" minOccurs="0" />
+                <xs:element name="BDNombre" type="xs:string" minOccurs="0" />
+		<xs:element name="User" type="xs:string" minOccurs="0" />
+                <xs:element name="PWD" type="xs:string" minOccurs="0" />
+		<xs:element name="EncPWD" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Config>
+    <Host>linuxserver</Host>
+    <BDNombre>creditum</BDNombre>
+    <User>geuser</User>
+    <PWD>ge123456789</PWD>
+    <EncPWD>rrodrigu3z</EncPWD>
+  </Config>  
+</NewDataSet>
