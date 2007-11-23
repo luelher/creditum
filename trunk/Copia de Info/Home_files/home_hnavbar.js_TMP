@@ -1,0 +1,55 @@
+//©Xara Ltd
+if(typeof(loc)=="undefined"||loc==""){var loc="";if(document.body&&document.body.innerHTML){var tt=document.body.innerHTML;var ml=tt.match(/["']([^'"]*)home_hnavbar.js_tmp["']/i);if(ml && ml.length > 1) loc=ml[1];}}
+
+var bd=0
+document.write("<style type=\"text/css\">");
+document.write("\n<!--\n");
+document.write(".home_hnavbar_menu {z-index:999;border-color:#000000;border-style:solid;border-width:"+bd+"px 0px "+bd+"px 0px;background-color:#339721;position:absolute;left:0px;top:0px;visibility:hidden;}");
+document.write(".home_hnavbar_plain, a.home_hnavbar_plain:link, a.home_hnavbar_plain:visited{text-align:left;background-color:#339721;color:#ffffff;text-decoration:none;border-color:#000000;border-style:solid;border-width:0px "+bd+"px 0px "+bd+"px;padding:2px 0px 2px 0px;cursor:hand;display:block;font-size:8pt;font-family:Arial, Helvetica, sans-serif;font-weight:bold;}");
+document.write("a.home_hnavbar_plain:hover, a.home_hnavbar_plain:active{background-color:#bef97d;color:#000000;text-decoration:none;border-color:#000000;border-style:solid;border-width:0px "+bd+"px 0px "+bd+"px;padding:2px 0px 2px 0px;cursor:hand;display:block;font-size:8pt;font-family:Arial, Helvetica, sans-serif;font-weight:bold;}");
+document.write("a.home_hnavbar_l:link, a.home_hnavbar_l:visited{text-align:left;background:#339721 url("+loc+"home_hnavbar_l.gif) no-repeat right;color:#ffffff;text-decoration:none;border-color:#000000;border-style:solid;border-width:0px "+bd+"px 0px "+bd+"px;padding:2px 0px 2px 0px;cursor:hand;display:block;font-size:8pt;font-family:Arial, Helvetica, sans-serif;font-weight:bold;}");
+document.write("a.home_hnavbar_l:hover, a.home_hnavbar_l:active{background:#bef97d url("+loc+"home_hnavbar_l2.gif) no-repeat right;color: #000000;text-decoration:none;border-color:#000000;border-style:solid;border-width:0px "+bd+"px 0px "+bd+"px;padding:2px 0px 2px 0px;cursor:hand;display:block;font-size:8pt;font-family:Arial, Helvetica, sans-serif;font-weight:bold;}");
+document.write("\n-->\n");
+document.write("</style>");
+
+var fc=0x000000;
+var bc=0xbef97d;
+if(typeof(frames)=="undefined"){var frames=0;}
+
+startMainMenu("",0,0,2,0,0)
+mainMenuItem("home_hnavbar_b1",".gif_TMP",43,97,"javascript:;","","Home",2,2,"home_hnavbar_plain");
+mainMenuItem("home_hnavbar_b2",".gif_TMP",43,97,"javascript:;","","¿Quiénes Somos?",2,2,"home_hnavbar_plain");
+mainMenuItem("home_hnavbar_b3",".gif_TMP",43,97,"javascript:;","","Servicios",2,2,"home_hnavbar_plain");
+mainMenuItem("home_hnavbar_b4",".gif_TMP",43,97,"javascript:;","","Contáctanos",2,2,"home_hnavbar_plain");
+mainMenuItem("home_hnavbar_b5",".gif_TMP",43,97,"javascript:;","","Links",2,2,"home_hnavbar_plain");
+mainMenuItem("home_hnavbar_b6",".gif_TMP",43,97,"javascript:;","","Ayuda",2,2,"home_hnavbar_plain");
+endMainMenu("",0,0);
+
+startSubmenu("home_hnavbar_b6","home_hnavbar_menu",147);
+submenuItem("Información General","javascript:;","","home_hnavbar_plain");
+submenuItem("Preguntas y Respuestas","javascript:;","","home_hnavbar_plain");
+endSubmenu("home_hnavbar_b6");
+
+startSubmenu("home_hnavbar_b4","home_hnavbar_menu",97);
+submenuItem("Vía Telefónica","javascript:;","","home_hnavbar_plain");
+submenuItem("Vía EMail","javascript:;","","home_hnavbar_plain");
+endSubmenu("home_hnavbar_b4");
+
+startSubmenu("home_hnavbar_b3_3","home_hnavbar_menu",132);
+submenuItem("Consultas Mensuales","javascript:;","","home_hnavbar_plain");
+submenuItem("Mi Perfil","javascript:;","","home_hnavbar_plain");
+endSubmenu("home_hnavbar_b3_3");
+
+startSubmenu("home_hnavbar_b3_2","home_hnavbar_menu",133);
+submenuItem("Información Crediticia","javascript:;","","home_hnavbar_plain");
+submenuItem("Estado de Cuenta","javascript:;","","home_hnavbar_plain");
+endSubmenu("home_hnavbar_b3_2");
+
+startSubmenu("home_hnavbar_b3","home_hnavbar_menu",193);
+submenuItem("Registro","javascript:;","","home_hnavbar_plain");
+mainMenuItem("home_hnavbar_b3_2","Consultas",0,0,"javascript:;","","",1,1,"home_hnavbar_l");
+mainMenuItem("home_hnavbar_b3_3","Reportes",0,0,"javascript:;","","",1,1,"home_hnavbar_l");
+submenuItem("Enviar Información de Cliente","javascript:;","","home_hnavbar_plain");
+endSubmenu("home_hnavbar_b3");
+
+loc="";

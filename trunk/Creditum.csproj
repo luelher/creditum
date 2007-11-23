@@ -1,0 +1,2462 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Web"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{7B5EA236-55CA-4775-B08E-41CAEC8599D4}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "Creditum"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "Creditum"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Web"
+                    AssemblyName = "System.Web"
+                    HintPath = "..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Web.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "GrupoEmporium.Datos"
+                    AssemblyName = "GrupoEmporium.Datos"
+                    HintPath = "..\..\..\Proyectos Visual Studio\GrupoEmporium\Ensamblados\GrupoEmporium.Datos.dll"
+                />
+                <Reference
+                    Name = "MySQLDriverCS"
+                    AssemblyName = "MySQLDriverCS"
+                    HintPath = "..\..\..\Proyectos Visual Studio\GrupoEmporium\Ensamblados\MySQLDriverCS.dll"
+                />
+                <Reference
+                    Name = "CrystalDecisions.Shared"
+                    AssemblyName = "CrystalDecisions.Shared"
+                    HintPath = "..\..\..\Archivos de programa\Archivos comunes\Crystal Decisions\1.1\Managed\CrystalDecisions.Shared.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "CrystalDecisions.ReportSource"
+                    AssemblyName = "CrystalDecisions.ReportSource"
+                    HintPath = "..\..\..\Archivos de programa\Archivos comunes\Crystal Decisions\1.1\Managed\CrystalDecisions.ReportSource.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "CrystalDecisions.CrystalReports.Engine"
+                    AssemblyName = "CrystalDecisions.CrystalReports.Engine"
+                    HintPath = "..\..\..\Archivos de programa\Archivos comunes\Crystal Decisions\1.1\Managed\CrystalDecisions.CrystalReports.Engine.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "Creditum.Usuarios"
+                    AssemblyName = "Creditum.Usuarios"
+                    HintPath = "..\..\..\Proyectos Visual Studio\Proyectos\Creditum\Ensamblados\Creditum.Usuarios.dll"
+                />
+                <Reference
+                    Name = "GrupoEmporium.Mensajes"
+                    AssemblyName = "GrupoEmporium.Mensajes"
+                    HintPath = "..\..\..\Proyectos Visual Studio\GrupoEmporium\Ensamblados\GrupoEmporium.Mensajes.dll"
+                />
+                <Reference
+                    Name = "Clase_Importar"
+                    AssemblyName = "Clase_Importar"
+                    HintPath = "..\..\..\Proyectos Visual Studio\GrupoEmporium\Ensamblados\Clase_Importar.dll"
+                />
+                <Reference
+                    Name = "GrupoEmporium.Encriptamiento"
+                    AssemblyName = "GrupoEmporium.Encriptamiento"
+                    HintPath = "..\..\..\Proyectos Visual Studio\GrupoEmporium\Ensamblados\GrupoEmporium.Encriptamiento.dll"
+                />
+                <Reference
+                    Name = "AODL"
+                    AssemblyName = "AODL"
+                    HintPath = "E:\fuentes\sin clasificar\AODL_1_2_0_1_beta.zip_FILES\AODL.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CambioPwd.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "CambioPwd.aspx.cs"
+                    DependentUpon = "CambioPwd.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CambioPwd.aspx.resx"
+                    DependentUpon = "CambioPwd.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ConsultasCreditos.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ConsultasCreditos.aspx.cs"
+                    DependentUpon = "ConsultasCreditos.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ConsultasCreditos.aspx.resx"
+                    DependentUpon = "ConsultasCreditos.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Creditum.MetodosComunes.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DetalleFactura.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DetalleFactura.aspx.cs"
+                    DependentUpon = "DetalleFactura.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DetalleFactura.aspx.resx"
+                    DependentUpon = "DetalleFactura.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "EstadoCuenta.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "EstadoCuenta.aspx.cs"
+                    DependentUpon = "EstadoCuenta.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "EstadoCuenta.aspx.resx"
+                    DependentUpon = "EstadoCuenta.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Global.asax"
+                    SubType = "Component"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Global.asax.cs"
+                    DependentUpon = "Global.asax"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Global.asax.resx"
+                    DependentUpon = "Global.asax.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Home.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Home.aspx.cs"
+                    DependentUpon = "Home.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Home.aspx.resx"
+                    DependentUpon = "Home.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PerfilUsuarios.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PerfilUsuarios.aspx.cs"
+                    DependentUpon = "PerfilUsuarios.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PerfilUsuarios.aspx.resx"
+                    DependentUpon = "PerfilUsuarios.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Web.config"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "XMLBanner.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Contactanos.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Contactanos.aspx.cs"
+                    DependentUpon = "Contactanos.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Info\Contactanos.aspx.resx"
+                    DependentUpon = "Contactanos.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Info\Enviar_Email.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Enviar_Email.aspx.cs"
+                    DependentUpon = "Enviar_Email.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Info\Enviar_Email.aspx.resx"
+                    DependentUpon = "Enviar_Email.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Info\Quienes_somos.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Quienes_somos.aspx.cs"
+                    DependentUpon = "Quienes_somos.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Info\Quienes_somos.aspx.resx"
+                    DependentUpon = "Quienes_somos.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Info\Via_Email.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Via_Email.aspx.cs"
+                    DependentUpon = "Via_Email.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Info\Via_Email.aspx.resx"
+                    DependentUpon = "Via_Email.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Info\Via_Telefonica.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Via_Telefonica.aspx.cs"
+                    DependentUpon = "Via_Telefonica.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Info\Via_Telefonica.aspx.resx"
+                    DependentUpon = "Via_Telefonica.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Info\XMLBanner.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\ASPNET.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\Banner1.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\Banner2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\H_Separador.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\Home_border_left.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\Home_border_right.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\Home_bottom_left.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\Home_bottom_right.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\Home_bullet.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\Home_footer_bg.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\Home_hnavbar.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\Home_hnavbar.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar.js_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_b1.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_b1.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_b1_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_b1_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_b2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_b2.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_b2_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_b2_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_b3.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_b3.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_b3_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_b3_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_b4.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_b4.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_b4_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_b4_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_b5.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_b5.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_b5_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_b5_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_b6.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_b6.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_b6_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_b6_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\Home_hnavbar_bg.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_l.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_hnavbar_l2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\Home_logo2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\Home_logo2.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\Home_spacer.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\Home_top_left.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\Home_top_right.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\Home_vnavbar.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\Home_vnavbar.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar.js_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_b1.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_b1.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_b1_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_b1_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_b2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_b2.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_b2_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_b2_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_b3.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_b3.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_b3_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_b3_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_b4.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_b4.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_b4_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_b4_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_b5.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_b5.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_b5_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_b5_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_b6.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_b6.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_b6_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_b6_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_bottom.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_bottom.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_top.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\home_vnavbar_top.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\mysql.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Info\Home_files\Thumbs.db"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Info\Home_files\xaramenu.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Miperfil_files\Header.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Miperfil_files\impresora.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Miperfil_files\logo.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\PanelControlC.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\PanelControlC.aspx.cs"
+                    DependentUpon = "PanelControlC.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCC\PanelControlC.aspx.resx"
+                    DependentUpon = "PanelControlC.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCC\Home_files\ASPNET.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\Banner1.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\Banner2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\H_Separador.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\Home_border_left.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\Home_border_right.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\Home_bottom_left.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\Home_bottom_right.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\Home_bullet.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\Home_footer_bg.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\Home_hnavbar.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\Home_hnavbar.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar.js_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_b1.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_b1.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_b1_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_b1_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_b2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_b2.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_b2_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_b2_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_b3.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_b3.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_b3_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_b3_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_b4.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_b4.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_b4_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_b4_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_b5.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_b5.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_b5_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_b5_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_b6.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_b6.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_b6_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_b6_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\Home_hnavbar_bg.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_l.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_hnavbar_l2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\Home_logo2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\Home_logo2.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\Home_spacer.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\Home_top_left.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\Home_top_right.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\Home_vnavbar.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\Home_vnavbar.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar.js_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_b1.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_b1.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_b1_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_b1_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_b2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_b2.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_b2_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_b2_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_b3.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_b3.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_b3_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_b3_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_b4.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_b4.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_b4_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_b4_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_b5.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_b5.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_b5_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_b5_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_b6.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_b6.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_b6_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_b6_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_bottom.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_bottom.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_top.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\home_vnavbar_top.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\mysql.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCC\Home_files\Thumbs.db"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCC\Home_files\xaramenu.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\EliminarUsuarioC.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\EliminarUsuarioC.aspx.cs"
+                    DependentUpon = "EliminarUsuarioC.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCCA\EliminarUsuarioC.aspx.resx"
+                    DependentUpon = "EliminarUsuarioC.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCCA\HistorialFacturasC.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\HistorialFacturasC.aspx.cs"
+                    DependentUpon = "HistorialFacturasC.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCCA\HistorialFacturasC.aspx.resx"
+                    DependentUpon = "HistorialFacturasC.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCCA\ModificarUsuarioC.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\ModificarUsuarioC.aspx.cs"
+                    DependentUpon = "ModificarUsuarioC.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCCA\ModificarUsuarioC.aspx.resx"
+                    DependentUpon = "ModificarUsuarioC.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCCA\NuevoUsuarioC.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\NuevoUsuarioC.aspx.cs"
+                    DependentUpon = "NuevoUsuarioC.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCCA\NuevoUsuarioC.aspx.resx"
+                    DependentUpon = "NuevoUsuarioC.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCCA\PanelControlCA.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\PanelControlCA.aspx.cs"
+                    DependentUpon = "PanelControlCA.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCCA\PanelControlCA.aspx.resx"
+                    DependentUpon = "PanelControlCA.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCCA\SeleccionarMes.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\SeleccionarMes.aspx.cs"
+                    DependentUpon = "SeleccionarMes.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCCA\SeleccionarMes.aspx.resx"
+                    DependentUpon = "SeleccionarMes.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\ASPNET.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\Banner1.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\Banner2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\H_Separador.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\Home_border_left.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\Home_border_right.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\Home_bottom_left.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\Home_bottom_right.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\Home_bullet.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\Home_footer_bg.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\Home_hnavbar.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\Home_hnavbar.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar.js_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_b1.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_b1.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_b1_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_b1_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_b2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_b2.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_b2_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_b2_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_b3.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_b3.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_b3_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_b3_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_b4.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_b4.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_b4_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_b4_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_b5.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_b5.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_b5_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_b5_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_b6.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_b6.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_b6_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_b6_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\Home_hnavbar_bg.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_l.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_hnavbar_l2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\Home_logo2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\Home_logo2.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\Home_spacer.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\Home_top_left.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\Home_top_right.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\Home_vnavbar.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\Home_vnavbar.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar.js_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_b1.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_b1.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_b1_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_b1_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_b2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_b2.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_b2_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_b2_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_b3.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_b3.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_b3_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_b3_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_b4.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_b4.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_b4_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_b4_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_b5.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_b5.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_b5_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_b5_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_b6.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_b6.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_b6_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_b6_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_bottom.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_bottom.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_top.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\home_vnavbar_top.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\mysql.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\Thumbs.db"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCCA\Home_files\xaramenu.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\PanelControlO.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\PanelControlO.aspx.cs"
+                    DependentUpon = "PanelControlO.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCO\PanelControlO.aspx.resx"
+                    DependentUpon = "PanelControlO.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCO\Home_files\ASPNET.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\Banner1.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\Banner2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\H_Separador.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\Home_border_left.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\Home_border_right.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\Home_bottom_left.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\Home_bottom_right.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\Home_bullet.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\Home_footer_bg.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\Home_hnavbar.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\Home_hnavbar.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar.js_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_b1.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_b1.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_b1_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_b1_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_b2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_b2.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_b2_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_b2_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_b3.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_b3.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_b3_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_b3_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_b4.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_b4.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_b4_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_b4_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_b5.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_b5.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_b5_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_b5_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_b6.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_b6.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_b6_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_b6_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\Home_hnavbar_bg.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_l.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_hnavbar_l2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\Home_logo2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\Home_logo2.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\Home_spacer.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\Home_top_left.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\Home_top_right.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\Home_vnavbar.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\Home_vnavbar.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar.js_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_b1.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_b1.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_b1_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_b1_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_b2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_b2.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_b2_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_b2_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_b3.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_b3.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_b3_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_b3_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_b4.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_b4.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_b4_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_b4_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_b5.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_b5.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_b5_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_b5_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_b6.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_b6.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_b6_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_b6_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_bottom.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_bottom.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_top.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\home_vnavbar_top.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\mysql.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCO\Home_files\Thumbs.db"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCO\Home_files\xaramenu.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\BloquearCliente.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\BloquearCliente.aspx.cs"
+                    DependentUpon = "BloquearCliente.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCOA\BloquearCliente.aspx.resx"
+                    DependentUpon = "BloquearCliente.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCOA\ConsultasTelefonicas.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\ConsultasTelefonicas.aspx.cs"
+                    DependentUpon = "ConsultasTelefonicas.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCOA\ConsultasTelefonicas.aspx.resx"
+                    DependentUpon = "ConsultasTelefonicas.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCOA\EliminarCliente.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\EliminarCliente.aspx.cs"
+                    DependentUpon = "EliminarCliente.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCOA\EliminarCliente.aspx.resx"
+                    DependentUpon = "EliminarCliente.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCOA\EliminarUsuario.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\EliminarUsuario.aspx.cs"
+                    DependentUpon = "EliminarUsuario.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCOA\EliminarUsuario.aspx.resx"
+                    DependentUpon = "EliminarUsuario.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCOA\Error.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Error.aspx.cs"
+                    DependentUpon = "Error.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCOA\Error.aspx.resx"
+                    DependentUpon = "Error.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCOA\FacturaCliente.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\FacturaCliente.aspx.cs"
+                    DependentUpon = "FacturaCliente.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCOA\FacturaCliente.aspx.resx"
+                    DependentUpon = "FacturaCliente.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCOA\FacturasDia.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\FacturasDia.aspx.cs"
+                    DependentUpon = "FacturasDia.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCOA\FacturasDia.aspx.resx"
+                    DependentUpon = "FacturasDia.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCOA\GenerarReportes.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\GenerarReportes.aspx.cs"
+                    DependentUpon = "GenerarReportes.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCOA\GenerarReportes.aspx.resx"
+                    DependentUpon = "GenerarReportes.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCOA\HistorialFacturas.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\HistorialFacturas.aspx.cs"
+                    DependentUpon = "HistorialFacturas.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCOA\HistorialFacturas.aspx.resx"
+                    DependentUpon = "HistorialFacturas.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCOA\MCasaComercial.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\MCasaComercial.aspx.cs"
+                    DependentUpon = "MCasaComercial.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCOA\MCasaComercial.aspx.resx"
+                    DependentUpon = "MCasaComercial.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCOA\ModificarCliente.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\ModificarCliente.aspx.cs"
+                    DependentUpon = "ModificarCliente.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCOA\ModificarCliente.aspx.resx"
+                    DependentUpon = "ModificarCliente.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCOA\ModificarUsuario.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\ModificarUsuario.aspx.cs"
+                    DependentUpon = "ModificarUsuario.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCOA\ModificarUsuario.aspx.resx"
+                    DependentUpon = "ModificarUsuario.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCOA\MSucursal.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\MSucursal.aspx.cs"
+                    DependentUpon = "MSucursal.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCOA\MSucursal.aspx.resx"
+                    DependentUpon = "MSucursal.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCOA\NuevaCasaComercial.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\NuevaCasaComercial.aspx.cs"
+                    DependentUpon = "NuevaCasaComercial.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCOA\NuevaCasaComercial.aspx.resx"
+                    DependentUpon = "NuevaCasaComercial.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCOA\NuevaSucursal.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\NuevaSucursal.aspx.cs"
+                    DependentUpon = "NuevaSucursal.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCOA\NuevaSucursal.aspx.resx"
+                    DependentUpon = "NuevaSucursal.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCOA\NuevoCliente.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\NuevoCliente.aspx.cs"
+                    DependentUpon = "NuevoCliente.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCOA\NuevoCliente.aspx.resx"
+                    DependentUpon = "NuevoCliente.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCOA\NuevoUsuario.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\NuevoUsuario.aspx.cs"
+                    DependentUpon = "NuevoUsuario.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCOA\NuevoUsuario.aspx.resx"
+                    DependentUpon = "NuevoUsuario.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCOA\PanelControlOA.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\PanelControlOA.aspx.cs"
+                    DependentUpon = "PanelControlOA.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCOA\PanelControlOA.aspx.resx"
+                    DependentUpon = "PanelControlOA.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCOA\Precios.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Precios.aspx.cs"
+                    DependentUpon = "Precios.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCOA\Precios.aspx.resx"
+                    DependentUpon = "Precios.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCOA\ReporteGenerico.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\ReporteGenerico.aspx.cs"
+                    DependentUpon = "ReporteGenerico.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCOA\ReporteGenerico.aspx.resx"
+                    DependentUpon = "ReporteGenerico.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCOA\SeleccionarCliente.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\SeleccionarCliente.aspx.cs"
+                    DependentUpon = "SeleccionarCliente.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCOA\SeleccionarCliente.aspx.resx"
+                    DependentUpon = "SeleccionarCliente.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCOA\SeleccionarFecha.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\SeleccionarFecha.aspx.cs"
+                    DependentUpon = "SeleccionarFecha.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PCOA\SeleccionarFecha.aspx.resx"
+                    DependentUpon = "SeleccionarFecha.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PCOA\XMLBanner.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\FacturasDia_files\Header.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\FacturasDia_files\impresora.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\FacturasDia_files\logo.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\FacturasDia_files\Thumbs.db"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\ASPNET.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\Banner1.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\Banner2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\H_Separador.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\Home_border_left.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\Home_border_right.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\Home_bottom_left.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\Home_bottom_right.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\Home_bullet.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\Home_footer_bg.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\Home_hnavbar.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\Home_hnavbar.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar.js_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_b1.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_b1.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_b1_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_b1_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_b2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_b2.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_b2_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_b2_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_b3.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_b3.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_b3_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_b3_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_b4.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_b4.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_b4_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_b4_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_b5.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_b5.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_b5_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_b5_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_b6.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_b6.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_b6_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_b6_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\Home_hnavbar_bg.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_l.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_hnavbar_l2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\Home_logo2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\Home_logo2.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\Home_spacer.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\Home_top_left.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\Home_top_right.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\Home_vnavbar.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\Home_vnavbar.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar.js_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_b1.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_b1.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_b1_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_b1_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_b2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_b2.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_b2_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_b2_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_b3.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_b3.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_b3_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_b3_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_b4.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_b4.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_b4_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_b4_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_b5.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_b5.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_b5_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_b5_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_b6.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_b6.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_b6_over.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_b6_over.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_bottom.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_bottom.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_top.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\home_vnavbar_top.gif_TMP"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\mysql.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\Thumbs.db"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "PCOA\Home_files\xaramenu.js"
+                    BuildAction = "Content"
+                />
+            </Include>
+        </Files>
+        <StartupServices>
+            <Service ID = "{CF845C55-C321-4742-B673-E6212D061ED9}" />
+        </StartupServices>
+    </CSHARP>
+</VisualStudioProject>
+

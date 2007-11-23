@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creditum", "http://localhost/Creditum/Creditum.csproj", "{7B5EA236-55CA-4775-B08E-41CAEC8599D4}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+		Usuarios = Usuarios
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{7B5EA236-55CA-4775-B08E-41CAEC8599D4}.Debug.ActiveCfg = Debug|.NET
+		{7B5EA236-55CA-4775-B08E-41CAEC8599D4}.Debug.Build.0 = Debug|.NET
+		{7B5EA236-55CA-4775-B08E-41CAEC8599D4}.Release.ActiveCfg = Release|.NET
+		{7B5EA236-55CA-4775-B08E-41CAEC8599D4}.Release.Build.0 = Release|.NET
+		{7B5EA236-55CA-4775-B08E-41CAEC8599D4}.Usuarios.ActiveCfg = Release|.NET
+		{7B5EA236-55CA-4775-B08E-41CAEC8599D4}.Usuarios.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

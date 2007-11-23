@@ -1,0 +1,19 @@
+﻿<Advertisements>
+ 
+ <Ad>
+ <ImageUrl>Home_Files/Banner1.gif</ImageUrl>
+ <NavigateUrl>http://www.grupoemporium.com</NavigateUrl>
+ <AlternateText>Grupo Emporium</AlternateText>
+ <Impressions>3</Impressions>
+ <Keyword>Software</Keyword>
+ </Ad>
+ 
+ <Ad>
+ <ImageUrl>Home_Files/Banner2.gif</ImageUrl>
+ <NavigateUrl>http://www.grupoemporium.com</NavigateUrl>
+ <AlternateText>Grupo Emporium</AlternateText>
+ <Impressions>3</Impressions>
+ <Keyword>Software</Keyword>
+ </Ad>
+ 
+</Advertisements>
