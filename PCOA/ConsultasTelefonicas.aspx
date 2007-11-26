@@ -124,7 +124,7 @@
 													<P><asp:validationsummary id="ValidationSummaryHome" runat="server" Width="270px" HeaderText="Errores Encontrados"
 															EnableClientScript="False"></asp:validationsummary></P>
 													<P><asp:label id="lblLogin" runat="server" Font-Size="XX-Small">CEDULA/RIF</asp:label></P>
-													<P align="justify"><asp:textbox id="txtCedula" runat="server" Font-Size="XX-Small" Width="88px"></asp:textbox><asp:rangevalidator id="RangeValidatorCI" runat="server" Font-Size="X-Small" Type="Integer" MinimumValue="1000000"
+													<P align="justify"><asp:textbox id="txtCedula" runat="server" Font-Size="XX-Small" Width="88px"></asp:textbox><asp:rangevalidator id="RangeValidatorCI" runat="server" Font-Size="X-Small" Type="Integer" MinimumValue="0"
 															MaximumValue="100000000" ControlToValidate="txtCedula" ErrorMessage="Cédula Inválida" EnableClientScript="False">*</asp:rangevalidator><asp:requiredfieldvalidator id="RequiredFieldValidatorCI" runat="server" Font-Size="X-Small" Width="23px" ControlToValidate="txtCedula"
 															ErrorMessage="Especifique una cédula" EnableClientScript="False">*</asp:requiredfieldvalidator></P>
 													<P align="justify">&nbsp;</P>
