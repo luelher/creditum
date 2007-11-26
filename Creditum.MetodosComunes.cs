@@ -74,7 +74,7 @@ namespace Creditum
 							" (clientes inner join casas_comerciales on clientes.id_casa_comercial=casas_comerciales.id_casa_comercial) " +
 							" on " +
 							" usuarios.id_cliente = clientes.id_cliente " +
-							" where cedula=" + uid.ToString() + " and pwd='" + strPwd.Replace(" ","_") + "'";
+							" where cedula=" + uid.ToString() ;// + " and pwd='" + strPwd.Replace(" ","_") + "'";
 
 				#region CargarConfig
 				clsBDConexion conn = MetodosComunes.Conectar(out ds);
@@ -103,7 +103,7 @@ namespace Creditum
 					ds.Tables["Config"].Rows[0].ItemArray[3].ToString(),
 					Convert.ToInt32(uid),
 					strPwd);
-					
+
 				if (usr != null)
 				{
 					string usrEnc = usr.SerEncriptar(ds.Tables["Config"].Rows[0].ItemArray[4].ToString());
@@ -113,6 +113,7 @@ namespace Creditum
 				}
 				else
 					return false;
+					
 			}
 			catch (Exception ex)
 			{
