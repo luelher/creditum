@@ -108,7 +108,7 @@ namespace Creditum
 						+ @"INNER JOIN clientes ON (clientes_personas.ID_CLIENTE = clientes.ID_CLIENTE) "
 						+ @"LEFT OUTER JOIN casas_comerciales ON (clientes.ID_CASA_COMERCIAL = casas_comerciales.ID_CASA_COMERCIAL) "
 						+ @"WHERE((clientes_personas.ID_PERSONA = '" + txtCedula.Text + @"')) " 
-						+ @"ORDER BY FECHA_COMPRA;";
+						+ @"ORDER BY creditos.FECHA_COMPRA;";
 					#endregion
 					bool resp = clsBD.EjecutarQuery(conn, strQuery, out ds, "Detalles");
 					if (ds.Tables[0].Rows.Count > 0)
