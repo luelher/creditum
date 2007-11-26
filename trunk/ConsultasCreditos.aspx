@@ -105,7 +105,7 @@
 													<P align="justify">
 														<asp:textbox id="txtCedula" runat="server" Font-Size="XX-Small" Width="88px"></asp:textbox>
 														<asp:RangeValidator id="RangeValidatorCI" runat="server" Font-Size="X-Small" ErrorMessage="Cédula Inválida"
-															ControlToValidate="txtCedula" MaximumValue="100000000" MinimumValue="1000000" Type="Integer">*</asp:RangeValidator>
+															ControlToValidate="txtCedula" MaximumValue="100000000" MinimumValue="0" Type="Integer">*</asp:RangeValidator>
 														<asp:requiredfieldvalidator id="RequiredFieldValidatorCI" runat="server" Font-Size="X-Small" Width="23px" ErrorMessage="Especifique una cédula"
 															ControlToValidate="txtCedula">*</asp:requiredfieldvalidator></P>
 													<P align="justify">
