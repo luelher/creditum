@@ -108,7 +108,7 @@ namespace Creditum.PCCA
 			Config cfg = new Config(usr.IDCliente, conn);
 			Importar imp = new Importar();
 			imp.Crear_Licencia(cfg, "Licencia" + cfg.Codigo + ".cre", @"C:\Inetpub\wwwroot\creditum\PCOA\Licencias");
-			Page.RegisterStartupScript("cerrar",@"<script language='javascript'>document.location.href=""Licencias/Licencia" + usr.IDCliente.ToString() + @".cre""" + "</script>");
+			Page.RegisterStartupScript("cerrar",@"<script language='javascript'>document.location.href=""../PCOA/Licencias/Licencia" + usr.IDCliente.ToString() + @".cre""" + "</script>");
 			//			Page.RegisterStartupScript("cerrar",@"<script language='javascript'>downloadlink('\Licencias\Licencia" + usr.IDCliente.ToString() + @".cre')" + "</script>");
 
 		}
