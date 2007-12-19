@@ -153,6 +153,23 @@
 																</LI>
 															</UL>
 														</UL>
+														<EM><STRONG>
+																<P align="justify"><EM><STRONG>Descargar&nbsp;Creditum Cliente</STRONG></EM></P>
+																<UL>
+																	<UL>
+																		<LI>
+																			<DIV align="justify">
+																				<asp:LinkButton id="lnkCreditumCliente" runat="server">Creditum Cliente v.1.0</asp:LinkButton>
+															</STRONG></EM></DIV></LI></UL></UL>
+														<P align="justify"><EM><STRONG>Licencia para Creditum Cliente</STRONG></EM></P>
+														<UL>
+															<UL>
+																<LI>
+																	<DIV align="justify">
+																		<asp:LinkButton id="lnkbtnLicencia" runat="server">Generar Licencia</asp:LinkButton></DIV>
+																</LI>
+															</UL>
+														</UL>
 													</BLOCKQUOTE></BLOCKQUOTE>
 												<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</P>
 												<P align="left">&nbsp;</P>
