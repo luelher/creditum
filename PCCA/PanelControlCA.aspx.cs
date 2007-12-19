@@ -10,6 +10,9 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.HtmlControls;
 using Creditum.Usuarios;
+using CREDITUM.Importar;
+using GrupoEmporium.Datos;
+using GrupoEmporium.Mensajes;
 
 namespace Creditum.PCCA
 {
@@ -37,6 +40,8 @@ namespace Creditum.PCCA
 		protected System.Web.UI.WebControls.HyperLink Hyperlink5;
 		protected System.Web.UI.WebControls.Button BtnCerrarSesion;
 		protected System.Web.UI.WebControls.Panel Panel1;
+		protected System.Web.UI.WebControls.LinkButton lnkbtnLicencia;
+		protected System.Web.UI.WebControls.LinkButton lnkCreditumCliente;
 		protected System.Web.UI.WebControls.HyperLink lnkHelp;
 	
 		private void Page_Load(object sender, System.EventArgs e)
@@ -73,6 +78,8 @@ namespace Creditum.PCCA
 		private void InitializeComponent()
 		{    
 			this.BtnCerrarSesion.Click += new System.EventHandler(this.BtnCerrarSesion_Click);
+			this.lnkbtnLicencia.Click += new System.EventHandler(this.lnkbtnLicencia_Click);
+			this.lnkCreditumCliente.Click += new System.EventHandler(this.lnkCreditumCliente_Click);
 			this.Load += new System.EventHandler(this.Page_Load);
 
 		}
@@ -82,6 +89,28 @@ namespace Creditum.PCCA
 		{
 			FormsAuthentication.SignOut();
 			Response.Redirect(@"../Home.aspx");
+		}
+
+		private void lnkCreditumCliente_Click(object sender, System.EventArgs e)
+		{
+			Response.Redirect(@"../CREDITUM_Cliente_1_0.exe");
+			//Response.Redirect(@"../Upgrade.exe");		
+		}
+
+		private void lnkbtnLicencia_Click(object sender, System.EventArgs e)
+		{
+			DataSet ds1;
+			MetodosComunes mc = new MetodosComunes();
+			Usuario usr = mc.LeerCookie(@"c:\Config.xml", User.Identity.Name);
+			#region CargarConfig
+			clsBDConexion conn = MetodosComunes.Conectar(out ds1);
+			#endregion
+			Config cfg = new Config(usr.IDCliente, conn);
+			Importar imp = new Importar();
+			imp.Crear_Licencia(cfg, "Licencia" + cfg.Codigo + ".cre", @"C:\Inetpub\wwwroot\creditum\PCOA\Licencias");
+			Page.RegisterStartupScript("cerrar",@"<script language='javascript'>document.location.href=""Licencias/Licencia" + usr.IDCliente.ToString() + @".cre""" + "</script>");
+			//			Page.RegisterStartupScript("cerrar",@"<script language='javascript'>downloadlink('\Licencias\Licencia" + usr.IDCliente.ToString() + @".cre')" + "</script>");
+
 		}
 	}
 }

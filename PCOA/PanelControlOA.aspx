@@ -193,6 +193,17 @@
 																</LI>
 															</UL>
 														</UL>
+														<EM><STRONG>
+																<P align="justify"><EM><STRONG>Descargar&nbsp;Creditum Cliente</STRONG></EM></P>
+																<UL>
+																	<UL>
+																		<LI>
+																			<DIV align="justify">
+																				<asp:LinkButton id="lnkCreditumCliente" runat="server">Creditum Cliente v.1.0</asp:LinkButton></DIV>
+																		</LI>
+																	</UL>
+																</UL>
+															</STRONG></EM>
 														<P align="justify"><EM><STRONG>Licencia para Creditum Cliente</STRONG></EM></P>
 														<UL>
 															<UL>

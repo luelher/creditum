@@ -65,6 +65,7 @@ namespace Creditum.PCOA
 		protected System.Web.UI.WebControls.Label lblUser;
 		protected System.Web.UI.WebControls.Panel Panel1;
 		protected System.Web.UI.WebControls.HyperLink HyperLink7;
+		protected System.Web.UI.WebControls.LinkButton lnkCreditumCliente;
 		protected System.Web.UI.WebControls.HyperLink lnkHelp;
 	
 		private void Page_Load(object sender, System.EventArgs e)
@@ -109,6 +110,7 @@ namespace Creditum.PCOA
 			this.BtnCerrarSesion.Click += new System.EventHandler(this.BtnCerrarSesion_Click);
 			this.lnkbtnLicencia.Click += new System.EventHandler(this.lnkbtnLicencia_Click);
 			this.lnkBtnDemo.Click += new System.EventHandler(this.lnkBtnDemo_Click);
+			this.lnkCreditumCliente.Click += new System.EventHandler(this.lnkCreditumCliente_Click);
 			this.Load += new System.EventHandler(this.Page_Load);
 
 		}
@@ -147,6 +149,12 @@ namespace Creditum.PCOA
 		{
 			FormsAuthentication.SignOut();
 			Response.Redirect(@"../Home.aspx");
+		}
+
+		private void lnkCreditumCliente_Click(object sender, System.EventArgs e)
+		{
+			Response.Redirect(@"../CREDITUM_Cliente_1_0.exe");
+			//Response.Redirect(@"../Upgrade.exe");
 		}
 	}
 }
