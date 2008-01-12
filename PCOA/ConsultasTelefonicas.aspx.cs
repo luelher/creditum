@@ -48,6 +48,7 @@ namespace Creditum.PCOA
 		protected System.Web.UI.WebControls.DataGrid DataGridDatosPersonales;
 		protected System.Web.UI.WebControls.Label lblDP;
 		protected System.Web.UI.WebControls.Label lblCred;
+		protected System.Web.UI.WebControls.ImageButton imgbtnImprimir;
 		protected Usuario UsrTelefonico;
 	
 		private void Page_Load(object sender, System.EventArgs e)
@@ -66,6 +67,7 @@ namespace Creditum.PCOA
 			string scriptConfirmar = @"return confirm('Desea ver la información de la persona de CI:' + txtCedula.value + '?\n\r"
 				+ @"La consullta será cargada al usuario de CI:' + txtCedulaCliente.value);";
 			btnDetalles.Attributes.Add("OnClick", scriptConfirmar);
+			imgbtnImprimir.Attributes.Add("OnClick", @"window.print();");
 		}
 
 		#region Código generado por el Diseñador de Web Forms
@@ -213,7 +215,8 @@ namespace Creditum.PCOA
 							+ @"INNER JOIN personas_naturales ON (clientes_personas.ID_PERSONA = personas_naturales.CEDULA) "
 							+ @"INNER JOIN clientes ON (clientes_personas.ID_CLIENTE = clientes.ID_CLIENTE) "
 							+ @"LEFT OUTER JOIN casas_comerciales ON (clientes.ID_CASA_COMERCIAL = casas_comerciales.ID_CASA_COMERCIAL) "
-							+ @"WHERE((clientes_personas.ID_PERSONA = '" + txtCedula.Text + @"'));";
+							+ @"WHERE((clientes_personas.ID_PERSONA = '" + txtCedula.Text + @"')) "
+							+ @"ORDER BY creditos.FECHA_COMPRA DESC;";
 						#endregion
 						clsBD.EjecutarQuery(conn, strQuery, out ds, "Detalles");
 						if (ds.Tables[0].Rows.Count > 0)
@@ -227,6 +230,7 @@ namespace Creditum.PCOA
 								lblCred.Visible = true;
 								lblDP.Visible = true;
 								btnDetalles.Enabled = false;
+								imgbtnImprimir.Visible = true;
 							}
 							else
 							{
@@ -235,6 +239,7 @@ namespace Creditum.PCOA
 								DataGridDatosPersonales.Visible = false;
 								lblCred.Visible = false;
 								lblDP.Visible = false;
+								imgbtnImprimir.Visible = false;
 								//MensajeWeb.Info("Disculpe, el sistema no está disponible en este momento", Page, "Error2");
 								lblErrorCliente.Text = "Disculpe, el sistema no está disponible en este momento, su consulta no ha sido procesada";
 							}
@@ -245,6 +250,7 @@ namespace Creditum.PCOA
 							DataGridDatosPersonales.Visible = false;
 							lblCred.Visible = false;
 							lblDP.Visible = false;
+							imgbtnImprimir.Visible = false;
 							//btnDetalles.Enabled = false;
 							//lblError.Text = "Disculpe la persona solicitada no esta registrada en nuestro sistema";
 							RegistrarConsultasVacias(conn);
@@ -258,6 +264,7 @@ namespace Creditum.PCOA
 						DataGridDatosPersonales.Visible = false;
 						lblCred.Visible = false;
 						lblDP.Visible = false;
+						imgbtnImprimir.Visible = false;
 						if (UsrTelefonico == null)
 							MensajeWeb.Info("El Usuario de Cedula " + txtCedulaCliente.Text + " no está registrado en el sistema", Page, "InfoNoExiste");
 						else

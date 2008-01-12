@@ -121,9 +121,15 @@ namespace Creditum
 		/// </summary>
 		private void InitializeComponent()
 		{    
+			this.imgbtnImprimir.Click += new System.Web.UI.ImageClickEventHandler(this.imgbtnImprimir_Click);
 			this.Load += new System.EventHandler(this.Page_Load);
 
 		}
 		#endregion
+
+		private void imgbtnImprimir_Click(object sender, System.Web.UI.ImageClickEventArgs e)
+		{
+		
+		}
 	}
 }
