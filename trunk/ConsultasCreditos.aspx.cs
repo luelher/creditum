@@ -39,12 +39,14 @@ namespace Creditum
 		protected System.Web.UI.WebControls.DataGrid DataGridDatosPersonales;
 		protected System.Web.UI.WebControls.Label lblDP;
 		protected System.Web.UI.WebControls.Label lblCred;
+		protected System.Web.UI.WebControls.ImageButton imgbtnImprimir;
 		protected System.Web.UI.WebControls.HyperLink lnkHelp;
 	
 		private void Page_Load(object sender, System.EventArgs e)
 		{
 			// Introducir aquí el código de usuario para inicializar la página
 			lblTime.Text = System.DateTime.Now.ToLongDateString();
+			imgbtnImprimir.Attributes.Add("OnClick", @"window.print();");
 			string scriptConfirmar = @"return confirm('Desea ver la información de la persona de CI:' + txtCedula.value + '?');";
 			btnDetalles.Attributes.Add("OnClick", scriptConfirmar);
 		}
@@ -108,7 +110,7 @@ namespace Creditum
 						+ @"INNER JOIN clientes ON (clientes_personas.ID_CLIENTE = clientes.ID_CLIENTE) "
 						+ @"LEFT OUTER JOIN casas_comerciales ON (clientes.ID_CASA_COMERCIAL = casas_comerciales.ID_CASA_COMERCIAL) "
 						+ @"WHERE((clientes_personas.ID_PERSONA = '" + txtCedula.Text + @"')) " 
-						+ @"ORDER BY creditos.FECHA_COMPRA;";
+						+ @"ORDER BY creditos.FECHA_COMPRA DESC;";
 					#endregion
 					bool resp = clsBD.EjecutarQuery(conn, strQuery, out ds, "Detalles");
 					if (ds.Tables[0].Rows.Count > 0)
@@ -122,6 +124,7 @@ namespace Creditum
 							DataGridDetalles.Visible = true;
 							lblCred.Visible = true;
 							lblDP.Visible = true;
+							imgbtnImprimir.Visible = true;
 						}
 						else
 						{
@@ -129,6 +132,7 @@ namespace Creditum
 							DataGridDatosPersonales.Visible = false;
 							lblCred.Visible = false;
 							lblDP.Visible = false;
+							imgbtnImprimir.Visible = false;
 							lblError.Text = "Disculpe el servicio no esta disponible en estos momentos, su consulta no ha sido procesada";
 						}
 					}
@@ -138,6 +142,7 @@ namespace Creditum
 						DataGridDatosPersonales.Visible = false;
 						lblCred.Visible = false;
 						lblDP.Visible = false;
+						imgbtnImprimir.Visible = false;
 						//lblError.Text = "Disculpe la persona solicitada no esta registrada en nuestro sistema";
 						RegistrarConsultasVacias(conn);
 						MensajeWeb.Info("La persona solicitada no está registrada en el sistema", Page, "InfoNoExiste");
@@ -149,6 +154,7 @@ namespace Creditum
 					DataGridDatosPersonales.Visible = false;
 					lblCred.Visible = false;
 					lblDP.Visible = false;
+					imgbtnImprimir.Visible = false;
 					lblError.Text = "Disculpe el servicio no esta disponible en estos momentos, su consulta no ha sido procesada";
 				}
 			}

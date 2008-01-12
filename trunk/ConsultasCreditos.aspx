@@ -141,6 +141,9 @@
 													</asp:DataGrid>
 													<P></P>
 													<P dir="ltr">&nbsp;</P>
+													<P dir="ltr">
+														<asp:ImageButton id="imgbtnImprimir" runat="server" ImageUrl="Miperfil_files/impresora.gif" Visible="False"
+															CausesValidation="False"></asp:ImageButton></P>
 												</BLOCKQUOTE>
 												<H1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</H1>
 												<P align="left">&nbsp;</P>
